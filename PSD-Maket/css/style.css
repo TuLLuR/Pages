@@ -443,6 +443,8 @@ h2.title, .middle-block h2 {
   border-radius: 3px;
   border: 1px solid #cccccc;
   background-image: linear-gradient(to top, #e8e8e8, #fefefe);
+  line-height: 100%;
+  display: inline-block;
 }
 
 .design {
@@ -511,8 +513,8 @@ footer {
 }
 
 .third-block {
-  width: 274px;
-  line-height: 15px;
+  width: 280px;
+  line-height: 12px;
 }
 
 .third-block .blue {
@@ -625,11 +627,6 @@ main p{
 /* ABOUT US END */
 
 /* SERVICES START */
-
-.flleft{
-  float: left;
-}
-
   .flright{
     float: right;
     
@@ -660,7 +657,143 @@ main p{
   }
 /* SERVICES END */
 
+
+/* PORTFOLIO START */
+
+.page-block ul{
+  float: right; 
+}
+
+.page-block li{
+  float: left;  
+  margin-right: 30px; 
+}
+
+.page-block li:nth-last-child(){
+  margin-right: 0px;
+}
+
+.page-block li a{
+  font-size: 13px;
+  color: #93daff; 
+}
+
+.page-block li a:hover{
+  color: #fff;
+}
+
+.page-block li a.port-current{
+  color: #fff; 
+}
+
+.capital{
+  font-size: 15px;
+  color: #4f4f4f;
+  font-weight: bold;
+}
+
+.portfolio-middle-block {
+  background-color: #ffffff;
+  padding: 40px 0 50px 40px;
+}
+
+.portfolio-middle-block li {
+  float: left;
+  width: 265px;
+  margin-right: 45px;
+}
+
+.portfolio-middle-block li:last-child {
+  margin-right: 0;
+}
+
+.portfolio-middle-block p.capital {
+  margin-top: 15px;
+}
+
+.pagination{
+  padding: 21px 0 33px 41px;
+}
+
+.pagination li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pagination li a{
+  color: #0f4db6;
+}
+
+.pagination li a.current-page{
+  color: #0e0e0e;
+}
+/* PORTFOLIO END */
+
+/* CONTACT START */
+
+form{
+  width: 385px;
+}
+
+label{
+  font-size: 13px;
+  color: #4f4f4f;
+}
+
+input[type=text], textarea{
+  border: 1px solid #c9c9c9;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: url(../img/services/tp-bg-2.png) no-repeat 0 0;
+  width: 100%;
+  padding: 8px 3px;
+  resize: none;   
+}
+
+.sub-button{
+  border: 1px solid #c9c9c9;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #e8e8e8, #fefefe);
+  height: 30px;
+  width: 100px;
+  margin: 20px 0 70px 0;  
+}
+
+.sub-button:hover{
+  background-image: linear-gradient(to top, #fefefe, #e8e8e8);
+}
+
+.sidebar-block a{
+  color: #4f4f4f;
+}
+
+.sidebar-block .social-content li{
+  display: inline-block;  
+}
+
+.social-content a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/contact/social-contact.png) no-repeat 0 0;
+}
+
+.social-content a.linked {
+  background-position: -45px 0;
+}
+
+.social-content a.facebook {
+  background-position: -90px 0;
+}
+/* CONTACT END */
+
 .middle-block::after,
+.portfolio-middle-block::after,
 .blur::after,
 .top-footer::after,
 .main-block::after,
